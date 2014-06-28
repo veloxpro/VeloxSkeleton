@@ -1,0 +1,6 @@
+/node_modules/*
+/ui/tmp/*
+/ui/bower_components/*
+/public/dist/js/*
+/public/dist/css/*
+/public/dist/fonts/*
