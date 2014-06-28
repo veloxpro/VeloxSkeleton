@@ -1,0 +1,3 @@
+[submodule "src/Velox/Framework"]
+	path = src/Velox/Framework
+	url = https://github.com/veloxpro/VeloxFramework.git
