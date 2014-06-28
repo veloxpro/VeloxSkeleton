@@ -39,6 +39,4 @@ use Velox\Framework\Kernel\Kernel;
 session_start();
 Kernel::init();
 Kernel::registerComponent('Velox\\Framework');
-Kernel::registerComponent('VeloxStack\\Account');
-Kernel::registerComponent('VeloxStack\\Blog');
 Kernel::launch();
