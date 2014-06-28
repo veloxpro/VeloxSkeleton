@@ -1,4 +1,4 @@
 VeloxSkeleton
 =============
 
-The skeleton for the Velox Framework projeckt
+The skeleton for the Velox Framework project
