@@ -26,7 +26,7 @@ module.exports = function (grunt) {
             },
             ui_src_js: {
                 files: {
-                    'ui/tmp/src_js.js': ['ui/src/js/**/*.js']
+                    'ui/tmp/src_js.js': ['ui/src/initjs/**/*.js', 'ui/src/js/**/*.js']
                 }
             }
         },
@@ -53,6 +53,7 @@ module.exports = function (grunt) {
             },
             ui_src_js: {
                 src: [
+                    'ui/src/initjs/**/*.js',
                     'ui/src/js/**/*.js'
                 ],
                 dest: 'ui/tmp/src_js.js'
