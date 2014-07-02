@@ -14,7 +14,11 @@ class Component extends BaseComponent {
         return [
             'home_page' => new HttpRoute(function() {
                     return new Dispatcher('Test\\TestComponent', 'Test', 'hello');
-                }, '/[?]hello/[:name][?]/', ['name' => '[a-zA-Z]+'])
+                }, '/[?]hello/[:name][?]/', ['name' => '[a-zA-Z]+([0-9]{1})?']),
+            'account' => new HttpRoute(function($route) {
+                    $matches = $route->getMatches();
+                    return new Dispatcher('Test\\TestComponent', 'Test', $matches['action']);
+            }, '/account/[:action]/', ['action' => 'login|logout|register'])
         ];
     }
 

@@ -39,5 +39,8 @@ use Velox\Framework\Kernel\Kernel;
 session_start();
 Kernel::init();
 Kernel::registerComponent('Velox\\Framework');
+Kernel::registerComponent('Velox\\Security');
+Kernel::registerComponent('Extra\\Widget');
 Kernel::registerComponent('Test\\TestComponent');
+Kernel::registerComponent('Test\\Admin');
 Kernel::launch();

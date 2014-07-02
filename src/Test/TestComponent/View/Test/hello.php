@@ -1,4 +1,4 @@
-<?php $this->extend('app/layout/base.php') ?>
+<?php $this->extend('app/layout/front.php') ?>
 
 <?php $this->startBlock('body') ?>
     <?php if (empty($name)) : ?>
