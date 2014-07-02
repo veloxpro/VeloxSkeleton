@@ -4,3 +4,6 @@
 [submodule "lib/Velox/Extra"]
 	path = lib/Velox/Extra
 	url = https://github.com/veloxpro/VeloxExtra.git
+[submodule "lib/Velox/Framework"]
+	path = lib/Velox/Framework
+	url = https://github.com/veloxpro/VeloxFramework.git
