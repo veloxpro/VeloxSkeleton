@@ -7,3 +7,6 @@
 [submodule "lib/Velox/Framework"]
 	path = lib/Velox/Framework
 	url = https://github.com/veloxpro/VeloxFramework.git
+[submodule "backend/lib/Velox"]
+	path = backend/lib/Velox
+	url = git@github.com:veloxpro/VeloxPHP.git
