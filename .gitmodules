@@ -10,3 +10,9 @@
 [submodule "backend/lib/Velox"]
 	path = backend/lib/Velox
 	url = git@github.com:veloxpro/VeloxPHP.git
+[submodule "frontend/coffee/Velox"]
+	path = frontend/coffee/Velox
+	url = git@github.com:veloxpro/VeloxCoffee.git
+[submodule "frontend/less/Velox"]
+	path = frontend/less/Velox
+	url = git@github.com:veloxpro/VeloxLess.git
