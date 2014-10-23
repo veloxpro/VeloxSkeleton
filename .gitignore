@@ -1,8 +1,6 @@
-/log/*
-/node_modules/*
-/ui/tmp/*
-/ui/bower_components/*
-/public/dist/js/*
-/public/dist/css/*
-/public/dist/fonts/*
-/app/config/*
+/backend/log/*
+/backend/app/config/*
+/frontend/node_modules/*
+/frontend/tmp/*
+/frontend/bower_components/*
+/frontend/dist/*

@@ -2,8 +2,8 @@
   "name": "VeloxSkeleton",
   "version": "1.0.0",
   "dependencies": {
-    "jquery": "*",
     "bootstrap": "~3.1.1",
-    "fontawesome": "~4.1.0"
+    "fontawesome": "~4.1.0",
+    "jquery": "~2.1.1"
   }
 }
