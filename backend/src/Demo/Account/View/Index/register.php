@@ -1,4 +1,4 @@
-<?php $this->extend('app/layout/front.php') ?>
+<?php $this->extend('src/Demo/App/layout/front.php') ?>
 
 <?php $this->startBlock('body') ?>
 <br/>

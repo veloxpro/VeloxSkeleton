@@ -35,12 +35,12 @@ module.exports = function (grunt) {
         coffee: {
             dev: {
                 files: {
-                    'tmp/build.js' : ['coffee/**/*.coffee']
+                    'tmp/build.js' : ['Velox.ClassLoader.coffee', 'coffee/**/*.coffee']
                 }
             },
             prod: {
                 files: {
-                    'tmp/build.js' : ['coffee/**/*.coffee']
+                    'tmp/build.js' : ['Velox.ClassLoader.coffee', 'coffee/**/*.coffee']
                 }
             }
         },
@@ -78,7 +78,7 @@ module.exports = function (grunt) {
         },
         watch: {
             configFiles: {
-                files: ['Gruntfile.js', 'coffee/**/*', 'less/**/*'],
+                files: ['Gruntfile.js', 'Velox.ClassLoader.coffee', 'coffee/**/*', 'less/**/*'],
                 tasks: ['build-dev'],
                 options: {
                     interrupt: true

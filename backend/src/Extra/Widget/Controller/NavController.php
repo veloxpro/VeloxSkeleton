@@ -11,8 +11,8 @@ class NavController extends BaseController {
         $isAdmin = $user && $user->getId() == 1;
 
         $navItems = [];
-        $navItems[] = ['title' => 'Home', 'route' => 'home_page'];
-        $navItems[] = ['title' => 'Greet', 'route' => 'home_page', 'routeParams' => ['name' => 'world']];
+        $navItems[] = ['title' => 'Home', 'route' => 'home'];
+        $navItems[] = ['title' => 'Greet', 'route' => 'home', 'routeParams' => ['name' => 'world']];
 
         if (Registry::get('Velox.Security.AuthenticationManager')->isAuthenticated()) {
             $navItems[] = ['title' => 'Logout', 'route' => 'account', 'routeParams' => ['action' => 'logout']];

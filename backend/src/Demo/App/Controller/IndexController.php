@@ -1,19 +1,13 @@
 <?php
-namespace Test\TestComponent\Controller;
+namespace Demo\App\Controller;
 
 use Velox\Framework\Mvc\BaseController;
 use Velox\Framework\Registry\Registry;
 
-class TestController extends BaseController {
-    public function helloAction() {
-        $authenticationManager = Registry::get('Velox.Security.AuthenticationManager');
-        //_dump($authenticationManager);
-
-        //_dump($authenticationManager->isAuthenticated());
-        //_dump($authenticationManager->getUser());
-
+class IndexController extends BaseController {
+    public function indexAction() {
         $request = Registry::get('Velox.Http.Request');
-        return $this->render('Test/hello.php', ['name' => $request->route->getString('name')]);
+        return $this->render('Index/index.php', ['name' => $request->route->getString('name')]);
     }
 
     public function loginAction() {

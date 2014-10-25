@@ -1,4 +1,3 @@
 <?php
-require "backend/app/bootstrap.php";
-use Velox\Framework\Registry\Registry;
-Registry::get('Velox.HttpRouter')->respond();
+require "backend/bootstrap.php";
+Velox\Framework\Registry\Registry::get('Velox.HttpRouter')->respond();

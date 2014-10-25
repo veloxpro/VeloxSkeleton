@@ -1,5 +1,5 @@
 <?php
-namespace Test\TestComponent;
+namespace Demo\Account;
 
 use Velox\Framework\Kernel\BaseComponent;
 use Velox\Framework\Mvc\Dispatcher;
@@ -12,12 +12,9 @@ class Component extends BaseComponent {
 
     public function getRoutes() {
         return [
-            'home_page' => new HttpRoute(function() {
-                    return new Dispatcher('Test\\TestComponent', 'Test', 'hello');
-                }, '/[?]hello/[:name][?]/', ['name' => '[a-zA-Z]+([0-9]{1})?']),
             'account' => new HttpRoute(function($route) {
                     $matches = $route->getMatches();
-                    return new Dispatcher('Test\\TestComponent', 'Test', $matches['action']);
+                    return new Dispatcher('Demo\Account', 'Index', $matches['action']);
             }, '/account/[:action]/', ['action' => 'login|logout|register'])
         ];
     }

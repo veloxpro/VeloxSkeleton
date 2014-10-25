@@ -1,4 +1,4 @@
-<?php $this->extend('app/layout/front.php') ?>
+<?php $this->extend(__DIR__ . '/../../layout/front.php') ?>
 
 <?php $this->startBlock('body') ?>
     <?php if (empty($name)) : ?>
@@ -7,5 +7,5 @@
     <?php else : ?>
         <h1>Hello <?= $this->escape($name) ?></h1>
     <?php endif; ?>
-    <script>VeloxView.push('Test/Test/hello');</script>
+    <script>Velox.run('Demo.App', 'Index', 'index')</script>
 <?php $this->endBlock() ?>

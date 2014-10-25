@@ -1,5 +1,5 @@
 <?php
-namespace Test\Admin;
+namespace Demo\Admin;
 
 use Velox\Framework\Kernel\BaseComponent;
 use Velox\Framework\Mvc\Dispatcher;

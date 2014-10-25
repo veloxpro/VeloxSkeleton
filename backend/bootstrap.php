@@ -30,7 +30,7 @@ function _callStack() {
     //echo '</pre>';
 }
 
-chdir(__DIR__ . '/../');
+chdir(__DIR__);
 
 require 'lib/Velox/Framework/Kernel/Kernel.php';
 
@@ -38,9 +38,10 @@ use Velox\Framework\Kernel\Kernel;
 
 session_start();
 Kernel::init();
-Kernel::registerComponent('Velox\\Framework');
-Kernel::registerComponent('Velox\\Security');
-Kernel::registerComponent('Extra\\Widget');
-Kernel::registerComponent('Test\\TestComponent');
-Kernel::registerComponent('Test\\Admin');
+Kernel::registerComponent('Velox\Framework');
+Kernel::registerComponent('Velox\Security');
+Kernel::registerComponent('Extra\Widget');
+Kernel::registerComponent('Demo\App');
+Kernel::registerComponent('Demo\Account');
+Kernel::registerComponent('Demo\Admin');
 Kernel::launch();

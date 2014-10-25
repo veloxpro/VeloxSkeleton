@@ -1,4 +1,4 @@
-<?php $this->extend('app/layout/base.php') ?>
+<?php $this->extend(__DIR__ . '/base.php') ?>
 
 <?php $this->startBlock('mainNav') ?>
 <?php $this->execute('Extra\\Widget', 'Nav', 'main') ?>

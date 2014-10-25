@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Velox Skeleton</title>
     <link rel="shortcut icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="/dist/css/build.css">
-    <script src="/dist/js/build.js"></script>
+    <link rel="stylesheet" href="<?= $this->baseUrl() ?>frontend/dist/css/build.css">
+    <script src="<?= $this->baseUrl() ?>frontend/dist/js/build.js"></script>
 </head>
 <body>
     <?php $this->renderBlock('mainNav') ?>
