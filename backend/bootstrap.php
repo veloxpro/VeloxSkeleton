@@ -40,7 +40,6 @@ session_start();
 Kernel::init();
 Kernel::registerComponent('Velox\Framework');
 Kernel::registerComponent('Velox\Security');
-Kernel::registerComponent('Extra\Widget');
 Kernel::registerComponent('Demo\App');
 Kernel::registerComponent('Demo\Account');
 Kernel::registerComponent('Demo\Admin');

@@ -1,5 +1,5 @@
 <?php
-namespace Extra\Widget\Controller;
+namespace Demo\App\Controller;
 
 use Velox\Framework\Mvc\BaseController;
 use Velox\Framework\Registry\Registry;
